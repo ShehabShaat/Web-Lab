@@ -36,7 +36,7 @@ $result=$number1*$number2;
 $answer=$_POST['answer'];
 if($result==$answer) {
     echo "<p style='text-align: center;color: chartreuse;font-size: 40px;'>TRUE ANSWER</p>";
-    echo "<img src='eyehome.jpg'>";
+    echo "<img src='eye_home.jpg'>";
 }
 else
     echo "<p style='text-align: center;color:red;font-size: 40px;'>TRUE ANSWER</p>";
