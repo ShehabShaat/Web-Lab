@@ -19,20 +19,30 @@
   <!--<tr><td> <input type="text" name="num2" value="" size="30" ></td></tr>
   <tr><td><input type="text" name="answer" value=""></td></tr>
     <tr><td><input type="date" name="date" value=""  ></td></tr>-->
-    <tr><td><input type="tel" name="mobile" pattern="05[6|9][0-9]{7}" value="" maxlength="10"  ></td></tr>
-    <tr><td><input type="text" name="gender" ></td></tr>
+    <tr><td><label>
+                <input type="tel" name="mobile" pattern="05[6|9][0-9]{7}" value="" maxlength="10"  >
+            </label></td></tr>
+    <tr><td><label>
+                <input type="text" name="gender" >
+            </label></td></tr>
 
-    <tr><td><select name="choose">
-                <option value="1">male</option>
-                <option value="2">female</option>
-                <option value="3">x</option>
+    <tr><td><label>
+                <select name="choose">
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                            <option value="3">Engineer</option>
 
-            </select></td></tr>
+                        </select>
+            </label></td></tr>
 
     <tr><td>
             <fieldset>
-            male<input type=radio name="choose1" value="1">
-             female<input type=radio name="choose1" value="2">
+            male<label>
+                    <input type=radio name="choose1" value="1">
+                </label>
+                female<label>
+                    <input type=radio name="choose1" value="2">
+                </label>
             </fieldset>
       </td></tr>
     <tr><td><input type="submit" name="submit1" value="CHECK"></td></tr>
