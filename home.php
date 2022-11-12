@@ -17,7 +17,7 @@
 <p class="newcolor" >THIS IS MY FIRST CSE PAGE</p>
 <h1 style="text-align: center; border-style: double;background-color: aqua"> THIS DONE BY AHMED &copy</h1>
 <center>
-<img src="eyehome.jpg" width="300px" height="200px" >
+<img src="eyehome.jpg" width="1000" height="667"  alt="">
 </center>
 <br><br>
 
