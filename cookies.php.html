@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>cookies.php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #a9b7c6;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+.s5 { color: #808080;}
+.s6 { color: #9876aa;}
+.s7 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+cookies.php</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?php</span>
+<span class="s2">setcookie</span><span class="s1">(</span><span class="s3">&quot;username3&quot;</span><span class="s0">,</span><span class="s3">&quot;y&quot;</span><span class="s0">,</span><span class="s2">time</span><span class="s1">()+</span><span class="s4">100</span><span class="s1">)</span><span class="s0">;</span>
+<span class="s5">//setcookie(&quot;username1&quot;,&quot;y&quot;,time()-36);</span>
+<span class="s0">echo </span><span class="s6">$_COOKIE</span><span class="s1">[</span><span class="s3">'username3'</span><span class="s1">].</span><span class="s3">'&lt;br/&gt;'</span><span class="s0">;</span>
+<span class="s0">?&gt;</span>
+</pre>
+</body>
+</html>

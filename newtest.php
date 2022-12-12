@@ -6,18 +6,27 @@
     <style>
         table, td {border:1px solid;border-collapse:collapse;margin-right: auto;margin-left:auto; }
         tr,table,p,td,input{text-align: center;}
+        input:valid {background-color: green;}
+        input:invalid {background-color: red;}
 
     </style>
 </head>
 <body>
-<p> THIS S A SIMPLE TEST EXAM</p>
+<p> THIS S A REG FORM</p>
 <table width="400px">
 <form name="text" method="post" action="" >
-    <tr><td><input type="text" name="num1" disabled value="<?php echo rand(1,100);   ?>"  placeholder="enter number 1"></td></tr>
-    <tr><td><input type="text" name="num2" value=""  placeholder="enter number 2"></td></tr>
-    <tr><td> <input type="text" name="answer" value=""  placeholder="enter the multi. of two numbers"></td></tr>
-    <tr><td> <input type="submit" name="submit" value="CHECK ANSWER" ></td></tr>
+    <tr><td><label>NAME</label><input type="text" name="stname"  value=""></td></label> </td></tr>
+    <tr><td><input type="email" name="stemail" value=""   placeholder="enter email"></td></tr>
+    <tr><td><input type="date" name="stdate" value=""  placeholder="enter date"></td></tr>
 
+    <tr><td> <input type="tel" name="stmobile" value="" pattern="05[9|6][0-9]{7}"  placeholder="0599884460"></td></tr>
+    <tr><td> <input type="submit" name="submit" value="CHECK ANSWER" ></td></tr>
+    <tr><td><select name="gender">
+         <option value="male">male</option>
+         <option value="female">female</option>
+
+     </select></td></tr>
+    <tr><td> <input type="submit" name="submit" value="CHECK ANSWER" ></td></tr>
 </form>
 </table>
 </body>
@@ -27,21 +36,7 @@
 <?php
 if(@$_POST['submit'])
 {
- /* print_r($_POST);*/
-  echo "<br>";
-$number1= $_POST['num1'];
-
-    $number2=$_POST['num2'];
-$result=$number1*$number2;
-$answer=$_POST['answer'];
-if($result==$answer) {
-    echo "<p style='text-align: center;color: chartreuse;font-size: 40px;'>TRUE ANSWER</p>";
-    echo "<img src='eye_home.jpg'>";
-}
-else
-    echo "<p style='text-align: center;color:red;font-size: 40px;'>TRUE ANSWER</p>";
-
-
+    print_r($_POST);
 
 }
 ?>
